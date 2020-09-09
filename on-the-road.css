@@ -1,0 +1,82 @@
+body {
+    display: block;
+    text-align: center;
+}
+.map {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.content {
+    width: auto;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 2em;
+}
+.destinations {
+    overflow: scroll;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    overflow-x: auto;
+    counter-reset: headers 0;
+    box-sizing: border-box;
+}
+.destination:last-child {
+    border-top: 0.5em;
+}
+.destination:last-child {
+    border-bottom: 0.5em;
+}
+.destination {
+    text-align: left;
+    color: black;
+    background-color: #dce0e4;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-top: 0.5em;
+    border-left: 1em;
+    border-right: 1em;
+}
+.dest-body {
+    max-height: 200vh;
+    transition: max-height 0.3s ease;
+}
+.destination:not(.selectedDest) .dest-body {
+    max-height: 0;
+    overflow: hidden;
+}
+.destination :not(.header) {
+    padding-left: 0.75em;
+}
+.header {
+    color: white;
+    user-select: none;
+    font-size: 1.3em;
+    font-weight: 500;
+    padding: 0.5em 1em;
+}
+.destination:nth-child(1n) .header {
+    background: #7d6b91;
+}
+.destination:nth-child(2n) .header {
+    background: #966B9D;
+}
+.destination:nth-child(3n) .header {
+    background: #c98686;
+}
+.destination:nth-child(4n) .header {
+    background: #f2b880;
+}
+.destination:nth-child(5n) .header {
+    background: #e07a5f;
+}
+.header::before {
+    content: counter(headers) ": ";
+    counter-increment: headers;
+}
+.quote {
+    font-style: italic;
+}
