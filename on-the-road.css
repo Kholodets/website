@@ -11,7 +11,7 @@ body {
 }
 .content {
     width: auto;
-    height: 80vh;
+    height: 75vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 2em;
@@ -91,11 +91,11 @@ body {
 }
 
 .top-bar {
-        width: 60%;
+        width: 65%;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
 }
 .top-bar p {
-        font-size: 1.2em;
+        font-size: 1.1em;
 }
