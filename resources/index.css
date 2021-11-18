@@ -34,5 +34,5 @@ p {
 .tweet {
         margin-left: auto;
         margin-right: auto;
-        align: center;
+        align-self: center;
 }
