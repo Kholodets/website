@@ -29,11 +29,15 @@ p {
         width: 50em;
         text-indent: 2em;
         font-size: 1.5em;
+        line-height: 1.5em;
 }
 
 h2 {
         margin-left: auto;
         margin-right: auto;
+        justify-content: center;
+        display: grid;
+        padding-top: 2em;
 }
 
 a {
